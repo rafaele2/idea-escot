@@ -122,7 +122,17 @@ footer{
     bottom: 0px;
     margin-top: auto;
 }
+.box1{
+    border-radius: 6px;
+    height: 40px;
+    width: 60px;
+    margin: 60px auto;
+    background-color: blue;
 
+}
+.box :hover{
+    transform: scale(4);
+}
 @media (max-width: 380px){
     body, .headerprincipal, .imagenprincipal .conteiner,.trabajos{
         display: flex;
