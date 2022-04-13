@@ -92,17 +92,21 @@ header, .headerprincipal{
     } 
 li :hover{
         box-shadow: 2px 2px black;
+        transform: scale(4);
     }
 li { 
     content: normal;
     margin-left: 20px;
 }
 .imagenprincipal{
-    height: 500px;
-    width: 500px;
-    border-radius: 5px;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
     justify-content: center;
     align-items: center;  
+}
+.imagenprincipal:hover{
+    transform: scale(2);
 }
 .trabajos{
     display: grid;
@@ -114,6 +118,24 @@ li {
 .modelos{
     width: 200px;
 }
+section{
+    display: grid;
+}
+.box{
+    border-radius: 6px;
+    height: 40px;
+    width: 60px;
+    margin: 60px auto;
+    background-color: blue;
+
+}
+.box:hover{
+    display: grid;
+    transform: scaleX(4);
+    transform: skewY(25deg);
+    transition-property: all;
+    transition-duration: 2s;
+}
 footer{
     display: flex;
     flex-direction: column;
@@ -122,17 +144,8 @@ footer{
     bottom: 0px;
     margin-top: auto;
 }
-.box1{
-    border-radius: 6px;
-    height: 40px;
-    width: 60px;
-    margin: 60px auto;
-    background-color: blue;
 
-}
-.box :hover{
-    transform: scale(4);
-}
+
 @media (max-width: 380px){
     body, .headerprincipal, .imagenprincipal .conteiner,.trabajos{
         display: flex;
