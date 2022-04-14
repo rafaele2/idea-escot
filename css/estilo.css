@@ -23,7 +23,7 @@ header, .headerprincipal{
     display: flex;
     flex-direction: row;
 }
-.conteiner {
+.conteiner2 {
     display: grid;
     grid-template-areas: 
     "header lista"
@@ -87,7 +87,7 @@ header, .headerprincipal{
     align-items: center;
     text-align: justify;
 }
-.enlaces {
+.enlaces1 {
     display: inline;
     } 
 li :hover{
